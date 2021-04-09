@@ -18,6 +18,19 @@ def game_core_v2(number):
     while number != predict:
         count+=1
         if number > predict:
+            predict += 1
+        elif number < predict:
+            predict -= 1
+    return(count) # выход из цикла, если угадали
+
+def game_core_v3(number):
+    '''Сначала устанавливаем любое random число, а потом уменьшаем или увеличиваем его в зависимости от того, больше оно или меньше нужного.
+       Функция принимает загаданное число и возвращает число попыток'''
+    count = 1
+    predict = np.random.randint(1,101)
+    while number != predict:
+        count+=1
+        if number > predict:
             if (number % 2 == 0) and (predict % 2 == 0):
                 predict += 2
             elif (number % 2 == 1) and (predict % 2 == 1):
@@ -44,6 +57,8 @@ def score_game(game_core):
     score = int(np.mean(count_ls))
     print(f"Ваш алгоритм угадывает число в среднем за {score} попыток")
     return(score)
-print(score_game(game_core_v2))
+
+
+print(score_game(game_core_v3))
 
 
