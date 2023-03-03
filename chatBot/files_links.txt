@@ -1,0 +1,7 @@
+Below - there are two links for data which were proceed and used in project.
+
+Link to products dataset:
+https://lms.skillfactory.ru/assets/courseware/v1/11b3ac339c56e7998e504b9edde7f03d/asset-v1:SkillFactory+DSPR-ML+ALWAYS+type@asset+block/ProductsDataset.zip
+
+Link to database of questions from mail.ru:
+https://disk.yandex.ru/d/ikeJ8Tu2LxPkeA
