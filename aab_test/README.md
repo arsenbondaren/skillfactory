@@ -1,4 +1,4 @@
-## Information about data
+# Information about data
 В каждом датасете есть три типа действий пользователей: 0 — клик, 1 — просмотр и 2 — покупка (пользователь просматривает выдачу товаров, кликает на понравившийся товар и совершает покупку).
 Each dataset has information about user's action ("action_id" column): 0 - click, 1 - view, 2 - purchase (user look through a list of products, clicks on it and buy it finally).
 ## Metrics to compare groups
