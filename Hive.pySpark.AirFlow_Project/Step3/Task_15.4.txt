@@ -1,0 +1,18 @@
+Exercise 1. The script to import tables from mysql to hive
+
+#!/bin/bash
+tableName=$1
+dbName=$2
+echo Importing $tableName table into database $dbName with sqoop import...
+hdfs dfs -rm -r -f -skipTrash /tmp/td1 >arsen_sqoop_stdout.txt 2>arsen_sqoop_stderr.txt
+export JAVA_HOME=/usr 
+sqoop import --connect jdbc:mysql://10.93.1.9/skillfactory --username mysql --password arenadata --hive-import -table $tableName --hive-table $dbName.$tableName -m 1 --validate --target-dir /tmp/td1 >arsen_sqoop_stdout.txt 2>arsen_sqoop_stderr.txt
+echo Done
+
+Exercise 2. The script to execute hive sql-command via beeline
+
+#!/bin/bash
+echo proccessing hive QL command $1 ...
+echo $1 >arsen_script.txt
+beeline -u jdbc:hive2://10.93.1.9:10000 hive eee -f arsen_script.txt >arsen_hive_stdout.txt 2>arsen_hive_stderr.txt
+echo Done

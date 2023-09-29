@@ -1,0 +1,111 @@
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| iso2_country                | string                                             |          |
+| capital                     | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:capital_orc, dbName:bandarenka_staging, owner:hive, createTime:1665780772, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:iso2_country, type:string, comment:null), FieldSchema(name:capital, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/bandarenka_staging.db/capital_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1665780772, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| country                     | string                                             |          |
+| city                        | string                                             |          |
+| accentcity                  | string                                             |          |
+| region                      | string                                             |          |
+| population                  | double                                             |          |
+| latitude                    | double                                             |          |
+| longitude                   | double                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:cities_orc, dbName:bandarenka_staging, owner:hive, createTime:1665662837, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:city, type:string, comment:null), FieldSchema(name:accentcity, type:string, comment:null), FieldSchema(name:region, type:string, comment:null), FieldSchema(name:population, type:double, comment:null), FieldSchema(name:latitude, type:double, comment:null), FieldSchema(name:longitude, type:double, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/bandarenka_staging.db/cities_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1665662837, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| iso2_country                | string                                             |          |
+| continent_code              | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:continent_orc, dbName:bandarenka_staging, owner:hive, createTime:1665780879, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:iso2_country, type:string, comment:null), FieldSchema(name:continent_code, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/bandarenka_staging.db/continent_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1665780879, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| country                     | string                                             |          |
+| region                      | string                                             |          |
+| population                  | string                                             |          |
+| area                        | string                                             |          |
+| pop_density                 | string                                             |          |
+| coastline                   | string                                             |          |
+| net_migration               | string                                             |          |
+| infant_mortality            | string                                             |          |
+| gdp                         | string                                             |          |
+| literacy                    | string                                             |          |
+| phones                      | string                                             |          |
+| arable                      | string                                             |          |
+| crops                       | string                                             |          |
+| other                       | string                                             |          |
+| climate                     | string                                             |          |
+| birthrate                   | string                                             |          |
+| deathrate                   | string                                             |          |
+| agriculture                 | string                                             |          |
+| industry                    | string                                             |          |
+| service                     | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:countries_of_the_world_orc, dbName:bandarenka_staging, owner:hive, createTime:1665696404, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:country, type:string, comment:null), FieldSchema(name:region, type:string, comment:null), FieldSchema(name:population, type:string, comment:null), FieldSchema(name:area, type:string, comment:null), FieldSchema(name:pop_density, type:string, comment:null), FieldSchema(name:coastline, type:string, comment:null), FieldSchema(name:net_migration, type:string, comment:null), FieldSchema(name:infant_mortality, type:string, comment:null), FieldSchema(name:gdp, type:string, comment:null), FieldSchema(name:literacy, type:string, comment:null), FieldSchema(name:phones, type:string, comment:null), FieldSchema(name:arable, type:string, comment:null), FieldSchema(name:crops, type:string, comment:null), FieldSchema(name:other, type:string, comment:null), FieldSchema(name:climate, type:string, comment:null), FieldSchema(name:birthrate, type:string, comment:null), FieldSchema(name:deathrate, type:string, comment:null), FieldSchema(name:agriculture, type:string, comment:null), FieldSchema(name:industry, type:string, comment:null), FieldSchema(name:service, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/bandarenka_staging.db/countries_of_the_world_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1665696404, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| iso2_country                | string                                             |          |
+| currency_code               | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:currency_orc, dbName:bandarenka_staging, owner:hive, createTime:1665780936, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:iso2_country, type:string, comment:null), FieldSchema(name:currency_code, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/bandarenka_staging.db/currency_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1665780936, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| iso2_country                | string                                             |          |
+| iso3_country                | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:iso3_orc, dbName:bandarenka_staging, owner:hive, createTime:1665780987, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:iso2_country, type:string, comment:null), FieldSchema(name:iso3_country, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/bandarenka_staging.db/iso3_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1665780987, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| iso2_country                | string                                             |          |
+| country_name                | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:names_orc, dbName:bandarenka_staging, owner:hive, createTime:1665781039, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:iso2_country, type:string, comment:null), FieldSchema(name:country_name, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/bandarenka_staging.db/names_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1665781039, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| year                        | string                                             |          |
+| category                    | string                                             |          |
+| prize                       | string                                             |          |
+| motivation                  | string                                             |          |
+| prize_share                 | string                                             |          |
+| laureate_id                 | string                                             |          |
+| laureate_type               | string                                             |          |
+| full_name                   | string                                             |          |
+| birth_date                  | string                                             |          |
+| birth_city                  | string                                             |          |
+| birth_country               | string                                             |          |
+| sex                         | string                                             |          |
+| organization_name           | string                                             |          |
+| organization_city           | string                                             |          |
+| organization_country        | string                                             |          |
+| death_date                  | string                                             |          |
+| death_city                  | string                                             |          |
+| death_country               | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:nobel_laureates_orc, dbName:bandarenka_staging, owner:hive, createTime:1665696240, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:year, type:string, comment:null), FieldSchema(name:category, type:string, comment:null), FieldSchema(name:prize, type:string, comment:null), FieldSchema(name:motivation, type:string, comment:null), FieldSchema(name:prize_share, type:string, comment:null), FieldSchema(name:laureate_id, type:string, comment:null), FieldSchema(name:laureate_type, type:string, comment:null), FieldSchema(name:full_name, type:string, comment:null), FieldSchema(name:birth_date, type:string, comment:null), FieldSchema(name:birth_city, type:string, comment:null), FieldSchema(name:birth_country, type:string, comment:null), FieldSchema(name:sex, type:string, comment:null), FieldSchema(name:organization_name, type:string, comment:null), FieldSchema(name:organization_city, type:string, comment:null), FieldSchema(name:organization_country, type:string, comment:null), FieldSchema(name:death_date, type:string, comment:null), FieldSchema(name:death_city, type:string, comment:null), FieldSchema(name:death_country, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/bandarenka_staging.db/nobel_laureates_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1665696240, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
++-----------------------------+----------------------------------------------------+----------+
+|          col_name           |                     data_type                      | comment  |
++-----------------------------+----------------------------------------------------+----------+
+| iso2_country                | string                                             |          |
+| phone_code                  | string                                             |          |
+|                             | NULL                                               | NULL     |
+| Detailed Table Information  | Table(tableName:phone_orc, dbName:bandarenka_staging, owner:hive, createTime:1665781096, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:iso2_country, type:string, comment:null), FieldSchema(name:phone_code, type:string, comment:null)], location:hdfs://adh-master:8020/apps/hive/warehouse/bandarenka_staging.db/phone_orc, inputFormat:org.apache.hadoop.hive.ql.io.orc.OrcInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.orc.OrcSerde, parameters:{serialization.format=1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{transient_lastDdlTime=1665781096, bucketing_version=2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER) |          |
++-----------------------------+----------------------------------------------------+----------+
