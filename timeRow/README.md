@@ -1,5 +1,5 @@
 # Sales forecast
-In this project, I made a forecast of sales for a chain store for the year ahead.
+In this project, I made a forecast of sales for a chain store for the year ahead. The forecast is stored in [forecast.csv](forecast.csv) file.
 ## Models:
 I tried several models to make forecasts, such as: **ARIMA**, **LinearRegression**, [Prophet](https://facebook.github.io/prophet/), **XGBoost**, [CatBoost](https://catboost.ai/en/docs/). The prophet model showed the best quality, so that for final forecast I used prophet. The forecast saved in forecast.csv file.
 ## Data:
